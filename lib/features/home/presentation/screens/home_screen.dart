@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   static const String routeName = '/home';
 
-  const HomeScreen({super.key, required this.phoneNumber});
+   const HomeScreen({super.key,});
 
-  final String phoneNumber;
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(phoneNumber),
-      ),
-    );
+    return Text('data');
   }
 }

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:tank2/core/router/app_router.dart';
-import 'package:tank2/features/home/presentation/screens/home_screen.dart';
-import 'package:tank2/features/login/presentation/screens/login_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
@@ -17,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: router,
+      debugShowCheckedModeBanner: false,
       locale: const Locale('fa'),
       supportedLocales: const [
         Locale('fa'),
